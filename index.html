@@ -1,0 +1,106 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Museum of ミニオン</title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">ミニオン</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navLinks" class="collapse navbar-collapse">
+            <div class="navbar-nav">
+                <a href="https://www.usj.co.jp/web/ja/jp" class="nav-item nav-link">USJ公式サイト</a>
+                <a href="https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%8B%E3%82%AA%E3%83%B3%E3%82%BA" class="nav-item nav-link">ミニオンWIKI</a>
+                <a href="https://twitter.com/minion_fanclub" class="nav-item nav-link">ファンクラブ</a>
+            </div>
+        </div>
+    </nav>
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div id="headingGroup" class="col-lg-6 mt-5">
+                <div class="text-center text-white d-none d-lg-block">
+                    <h2>MUSEUM<span>/</span>OF<span>/</span>ミニオン</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/ALL.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0">
+        <div class="row text-center align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img class="img-fluid" src="imgs/75693423.png" alt="">
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>ボブ</h2>
+                        <img class="d-none d-lg-inline" src="imgs/banana.png" alt="">
+                        <p class="lead">
+                            ミニオンの中でもちょっと変わった存在。
+                            ティムというぬいぐるみを持っていることが多い。
+                            両目で違う色を持つオッドアイのミニオン。
+                            身長が低く、つるつるとした頭が特徴的な可愛らしいミニオンです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center align-items-center content">
+            <div class="col-md-6">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>ケビン</h2>
+                        <img class="d-none d-lg-inline" src="imgs/banana.png" alt="">
+                        <p class="lead">
+                            ミニオンの頼れるリーダー的存在。勇敢で仲間を守る男気のあるミニオン。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="imgs/kebin.jpeg" alt="">
+            </div>
+        </div>
+        <div class="row text-center align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img class="img-fluid" src="imgs/stuart.jpeg" alt="">
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>スチュアート</h2>
+                        <img class="d-none d-lg-inline" src="imgs/banana.png" alt="">
+                        <p class="lead">
+                            ギター好きでクールな性格。（持っているのはウクレレ）
+                            ロックスターに憧れている。
+                            バナナが大好きすぎてケビン・ボブをバナナと見間違えて食べようとしたことがある。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                let $nav = $('#mainNavbar');
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            })
+        })
+    </script>
+</body>
+
+</html>
